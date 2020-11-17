@@ -1,0 +1,75 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.controls {
+  position: absolute;
+  bottom: -3.5em;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, .75);
+  transition: bottom 0.175s ease-in-out;
+}
+/* .container:hover .controls { */
+.container .controls {
+  bottom: 0;
+}
+
+.controls .rew-fwd-select {
+  outline: none;
+  width: 3em;
+}
+
+.controls .seekbar {
+  height: .5em;
+  position: relative;
+}
+
+.controls .seekbar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: red;
+  pointer-events: none;
+}
+
+.controls #buttons {
+  padding: 10px;
+}
+
+.controls button {
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  margin: 0;
+  border: 0;
+  border-radius: .5em;
+  cursor: pointer;
+  outline: none;
+  background-color: aquamarine;
+  transition: background-color .3s ease-in-out,
+              color .3s ease-in-out;
+}
+
+.controls button:hover {
+  background-color: teal;
+  color: white;
+}
